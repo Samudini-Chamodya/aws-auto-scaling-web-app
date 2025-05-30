@@ -81,7 +81,7 @@ This project demonstrates enterprise-level AWS infrastructure deployment with au
 | ![CloudWatch Metrics](docs/screenshots/9.cloudwatch-metrics.png) | ![Scaling](docs/screenshots/12.scaling-activity-2.png) |
 
 ### **Appication Running**
-![Website](docs/screenshots/final.png)
+![Website](docs/screenshots/Final.png)
 
 
 
