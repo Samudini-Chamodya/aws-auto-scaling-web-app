@@ -1,9 +1,8 @@
-# aws-auto-scaling-web-app
 # 🚀 AWS Auto-Scaling Web Application
 
 A highly available, scalable web application deployed on AWS using Auto Scaling Groups, Application Load Balancer, and custom VPC infrastructure.
 
-![Architecture](docs/screenshots/1-Cloud_Diagram.png)
+![Architecture](docs/screenshots/1.Cloud_Diagram.drawio)
 
 ## 🎯 **Project Overview**
 
@@ -68,12 +67,12 @@ This project demonstrates enterprise-level AWS infrastructure deployment with au
 ### **Infrastructure Setup**
 | VPC Configuration | Load Balancer Status |
 |:-----------------:|:--------------------:|
-| ![VPC](docs/screenshots/8-vpc-networking.png) | ![ALB](docs/screenshots/6.application-load-balancer.png) |
+| ![VPC](docs/screenshots/8.vpc-networking.png) | ![ALB](docs/screenshots/6.application-load-balancer.png) |
 
 ### **Application Running**
 | Website Interface | Auto Scaling Activity |
 |:-----------------:|:---------------------:|
-| ![Website](docs/screenshots/3.webapp-instance-1.png) |![Website](docs/screenshots/4.webapp-instance-2.png) | ![Scaling](docs/screenshots/11.scaling-activity-1.png) |
+| ![Website](docs/screenshots/3.webapp_instance-1.png) |![Website](docs/screenshots/2.webapp_instance-2.png) | ![Scaling](docs/screenshots/12.scaling-activity-2.png) |
 
 ### **Monitoring & Metrics**
 ![CloudWatch Metrics](docs/screenshots/9.cloudwatch-metrics.png)
