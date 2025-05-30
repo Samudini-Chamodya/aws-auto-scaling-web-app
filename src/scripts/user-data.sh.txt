@@ -1,0 +1,44 @@
+#!/bin/bash
+yum update -y
+yum install -y httpd
+
+# Get instance metadata
+INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+PUBLIC_IP=$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+AVAILABILITY_ZONE=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
+
+# Create the web page
+cat > /var/www/html/index.html << EOF
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Scaling Web App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f0f0f0; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        .info { background-color: #e7f3ff; padding: 15px; border-left: 4px solid #2196F3; margin: 10px 0; }
+        .refresh-btn { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .refresh-btn:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Auto Scaling Demo</h1>
+        <div class="info">
+            <h3>Instance Information:</h3>
+            <p><strong>Instance ID:</strong> $INSTANCE_ID</p>
+            <p><strong>Public IP:</strong> $PUBLIC_IP</p>
+            <p><strong>Availability Zone:</strong> $AVAILABILITY_ZONE</p>
+            <p><strong>Server Time:</strong> $(date)</p>
+        </div>
+        <center>
+            <button class="refresh-btn" onclick="location.reload()">Refresh Page</button>
+        </center>
+            </div>
+</body>
+</html>
+EOF
+
+systemctl start httpd
+systemctl enable httpd
