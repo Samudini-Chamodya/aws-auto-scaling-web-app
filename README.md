@@ -1,19 +1,19 @@
-# 🚀 AWS Auto-Scaling Web Application
+# AWS Auto-Scaling Web Application
 
 A highly available, scalable web application deployed on AWS using Auto Scaling Groups, Application Load Balancer, and custom VPC infrastructure.
 
 ![Architecture](docs/screenshots/1.Cloud_Diagram.drawio.png)
 
-## 🎯 **Project Overview**
+## **Project Overview**
 
 This project demonstrates enterprise-level AWS infrastructure deployment with automatic scaling capabilities. The application can handle traffic spikes by automatically adding EC2 instances and provides high availability across multiple Availability Zones.
 
 
-### **📊 Key Metrics**
-- ⚡ **Response Time**: < 200ms average
-- 🔄 **Auto-scaling**: CPU threshold at 50%
-- 🏗️ **High Availability**: 99.9% uptime across 2 AZs
-- 💰 **Cost Optimized**: Runs within AWS Free Tier
+### ** Key Metrics**
+-  **Response Time**: < 200ms average
+-  **Auto-scaling**: CPU threshold at 50%
+-  **High Availability**: 99.9% uptime across 2 AZs
+-  **Cost Optimized**: Runs within AWS Free Tier
 
 ---
 
@@ -31,6 +31,12 @@ This project demonstrates enterprise-level AWS infrastructure deployment with au
 | **Web Server** | Apache HTTP Server | Static content serving |
 
 ---
+## Why These Technologies**
+
+1-Auto Scaling Groups: Ensures application can handle traffic spikes automatically while controlling costs during low-demand periods
+2-Load Balancer: Provides fault tolerance and even traffic distribution, essential for production environments
+3-CloudWatch: Critical for maintaining system visibility and proactive issue resolution
+4-Multi-AZ Setup: Industry standard for high availability and disaster recovery
 
 ## 🏗️ **Architecture**
 
@@ -43,7 +49,7 @@ This project demonstrates enterprise-level AWS infrastructure deployment with au
 
 ---
 
-## 🚀 **Features**
+##  **Features**
 
 ### **✅ Implemented Features**
 - [x] **Auto Scaling**: Automatic instance management (Min: 1, Max: 4)
