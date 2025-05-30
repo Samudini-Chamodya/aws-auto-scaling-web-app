@@ -72,7 +72,7 @@ This project demonstrates enterprise-level AWS infrastructure deployment with au
 ### **Application Running**
 | Website Interface | Auto Scaling Activity |
 |:-----------------:|:---------------------:|
-| ![Website](docs/screenshots/3.webapp_instance-1.png) | ![Scaling](docs/screenshots/12.scaling-activity-2.png) |
+| ![Website](docs/screenshots/final.png) | ![Scaling](docs/screenshots/12.scaling-activity-2.png) |
 
 ### **Monitoring & Metrics**
 ![CloudWatch Metrics](docs/screenshots/9.cloudwatch-metrics.png)
