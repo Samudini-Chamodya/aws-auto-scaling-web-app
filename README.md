@@ -2,7 +2,7 @@
 
 A highly available, scalable web application deployed on AWS using Auto Scaling Groups, Application Load Balancer, and custom VPC infrastructure.
 
-![Architecture](docs/screenshots/1.Cloud_Diagram.drawio)
+![Architecture](docs/screenshots/1.Cloud_Diagram.drawio.png)
 
 ## 🎯 **Project Overview**
 
